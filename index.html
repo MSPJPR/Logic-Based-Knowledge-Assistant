@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page Title -->
+    <title>Logic-Based Knowledge Assistant</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- D3.js Library for Derivation Tree Visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Logic-Based Knowledge Assistant</h1>
+    
+    <!-- Main Application Container -->
+    <div id="app">
+        <!-- Input Textarea for Facts and Rules -->
+        <textarea id="input" placeholder="Enter facts and rules here..."></textarea>
+        
+        <!-- Button to Submit Facts and Rules -->
+        <button onclick="processInput()">Submit</button>
+        
+        <!-- Input Field for Query -->
+        <input type="text" id="query" placeholder="Enter query...">
+        
+        <!-- Button to Resolve Query -->
+        <button onclick="processQuery()">Resolve Query</button>
+        
+        <!-- Button to Clear the Knowledge Base -->
+        <button onclick="clearKnowledgeBase()">Clear Knowledge Base</button>
+        
+        <!-- Output Display Section -->
+        <div id="output"></div>
+        
+        <!-- Container for Derivation Tree Visualization -->
+        <div id="derivation-tree"></div>
+    </div>
+
+    <!-- Link to External JavaScript File -->
+    <script src="logicEngine.js"></script>
+</body>
+</html>
